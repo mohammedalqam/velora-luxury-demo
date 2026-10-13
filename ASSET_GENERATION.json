@@ -1,0 +1,127 @@
+{
+  "hero_prompt": "Warm travertine, champagne dress watch, espresso strap, negative space for Arabic typography",
+  "product_assets": [
+    {
+      "id": "w02",
+      "asset": "public/images/w02.webp",
+      "views": 2
+    },
+    {
+      "id": "w05",
+      "asset": "public/images/w05.webp",
+      "views": 2
+    },
+    {
+      "id": "w01",
+      "asset": "public/images/w01.webp",
+      "views": 2
+    },
+    {
+      "id": "w06",
+      "asset": "public/images/w06.webp",
+      "views": 2
+    },
+    {
+      "id": "w03",
+      "asset": "public/images/w03.webp",
+      "views": 2
+    },
+    {
+      "id": "j01",
+      "asset": "public/images/j01.webp",
+      "views": 2
+    },
+    {
+      "id": "w04",
+      "asset": "public/images/w04.webp",
+      "views": 2
+    },
+    {
+      "id": "j02",
+      "asset": "public/images/j02.webp",
+      "views": 2
+    },
+    {
+      "id": "j03",
+      "asset": "public/images/j03.webp",
+      "views": 2
+    },
+    {
+      "id": "j04",
+      "asset": "public/images/j04.webp",
+      "views": 2
+    },
+    {
+      "id": "j05",
+      "asset": "public/images/j05.webp",
+      "views": 2
+    },
+    {
+      "id": "b02",
+      "asset": "public/images/b02.webp",
+      "views": 2
+    },
+    {
+      "id": "j06",
+      "asset": "public/images/j06.webp",
+      "views": 2
+    },
+    {
+      "id": "b03",
+      "asset": "public/images/b03.webp",
+      "views": 2
+    },
+    {
+      "id": "b01",
+      "asset": "public/images/b01.webp",
+      "views": 2
+    },
+    {
+      "id": "b04",
+      "asset": "public/images/b04.webp",
+      "views": 2
+    },
+    {
+      "id": "b06",
+      "asset": "public/images/b06.webp",
+      "views": 2
+    },
+    {
+      "id": "b05",
+      "asset": "public/images/b05.webp",
+      "views": 2
+    },
+    {
+      "id": "f01",
+      "asset": "public/images/f01.webp",
+      "views": 2
+    },
+    {
+      "id": "f02",
+      "asset": "public/images/f02.webp",
+      "views": 2
+    },
+    {
+      "id": "f03",
+      "asset": "public/images/f03.webp",
+      "views": 2
+    },
+    {
+      "id": "f04",
+      "asset": "public/images/f04.webp",
+      "views": 2
+    },
+    {
+      "id": "f05",
+      "asset": "public/images/f05.webp",
+      "views": 2
+    },
+    {
+      "id": "f06",
+      "asset": "public/images/f06.webp",
+      "views": 2
+    }
+  ],
+  "note": "AI generated fictional products. Each atlas contains two actual generated photographic views. No real product guarantees.",
+  "product_prompt_template": "Two equal 3:4 photographs side-by-side in a 3:2 atlas. Same product in front and side/rear three-quarter views, warm ivory background, soft studio light, physical materials, no brands or text."
+}
