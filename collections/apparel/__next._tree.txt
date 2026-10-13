@@ -1,3 +1,3 @@
 :HL["/velora-luxury-demo/_next/static/chunks/354frt7fhhrwu.css","style"]
 :HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":4180,"slots":{"children":{"name":"collections","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"apparel","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"eWJ7pL3e2VQT5y7NLf9pW"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4180,"slots":{"children":{"name":"collections","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"apparel","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"U-9u7Mpa_d9PH5yImYf6W"}
