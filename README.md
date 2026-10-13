@@ -1,5 +1,7 @@
 # VELORA — luxury e-commerce demonstration
 
+[افتح المتجر مباشرة](https://mohammedalqam.github.io/velora-luxury-demo/) · [المصدر على GitHub](https://github.com/mohammedalqam/velora-luxury-demo)
+
 متجر توضيحي كامل بالعربية والإنجليزية لعرض خدمات تصميم المتاجر. Next.js + React + TypeScript + Tailwind CSS، مع تصدير ثابت لجميع الصفحات. لا توجد API، قاعدة بيانات، تسجيل دخول، بوابة دفع أو معالجة طلبات تجارية.
 
 ## التشغيل

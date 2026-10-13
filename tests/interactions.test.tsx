@@ -285,12 +285,12 @@ test("presentation changes the brand and uses distinct desktop and mobile viewpo
   );
   assert.equal(state!.name, "MY LABEL");
   assert.equal(
-    (m.container.querySelector(".preview-browser") as HTMLElement).style.width,
+    (m.container.querySelector("iframe") as HTMLIFrameElement).style.width,
     "1440px",
   );
   await click(button(m.container, "هاتف"));
   assert.equal(
-    (m.container.querySelector(".preview-browser") as HTMLElement).style.width,
+    (m.container.querySelector("iframe") as HTMLIFrameElement).style.width,
     "390px",
   );
   await click(button(m.container, "استعادة"));

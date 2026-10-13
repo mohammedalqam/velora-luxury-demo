@@ -45,7 +45,10 @@ export function Presentation() {
     window.addEventListener("resize", measure);
     return () => window.removeEventListener("resize", measure);
   }, []);
-  const frameWidth = device === "desktop" ? 1440 : 390,
+  const viewportWidth = device === "desktop" ? 1440 : 390,
+    frameInsets = device === "mobile" ? 16 : 2,
+    frameWidth = viewportWidth + frameInsets,
+    frameHeight = 855 + frameInsets,
     scale = Math.min(1, Math.max(240, stageWidth - 40) / frameWidth);
   const apply = () => {
     setName(draft.trim().slice(0, 40) || "VELORA");
@@ -164,7 +167,7 @@ export function Presentation() {
         <div ref={stage} className={"preview-stage " + device}>
           <div
             className="preview-envelope"
-            style={{ width: frameWidth * scale, height: 855 * scale }}
+            style={{ width: frameWidth * scale, height: frameHeight * scale }}
           >
             <div
               className="preview-browser"
@@ -186,12 +189,14 @@ export function Presentation() {
                   {t("تجربة توضيحية", "DEMONSTRATION")}
                 </span>
                 <span>
-                  {device === "mobile" ? "390" : "FULL"} /{" "}
+                  {viewportWidth} /{" "}
                   {locale.toUpperCase()}
                 </span>
               </div>
               <iframe
                 key={preset + locale + revision}
+                width={viewportWidth}
+                style={{ width: viewportWidth }}
                 src={assetUrl("/?preview=1")}
                 title={t(
                   "معاينة المتجر على " +
