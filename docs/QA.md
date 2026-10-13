@@ -24,18 +24,30 @@
 - Saved state excludes contact and payment information.
 - Presentation controls change the store name and expose actual 1440px/390px iframe widths.
 
-## Not executed
+## Public deployment and browser verification
 
-The Sites-managed environment did not expose the required control-browser capability. Per its preview instructions, no preview server, alternative browser path or browser installation was used.
+- Public repository: https://github.com/mohammedalqam/velora-luxury-demo
+- Public demo: https://mohammedalqam.github.io/velora-luxury-demo/
+- Application source commit: `fccbc3ea134e2cf30e405f515d621682e9373dae`.
+- Static deployment commit: `d224f844fd48719dafaa70c6ff92a3f224b552b9` on `gh-pages`.
+- Pages deployment run `38411597857`: completed successfully.
+- Anonymous HTTP requests returned 200 for the homepage, shop, product, checkout and hero image. No sign-in, cookie or authorization header was used.
+- Exported HTML and CSS references were checked against the local output. All referenced local pages, images, scripts, styles and fonts resolved under the repository base path. `.nojekyll` preserves `_next/` assets.
+- Open Graph image URL points to the public GitHub Pages origin. The old hosting origin is absent from the checked public HTML.
+- Homepage visually inspected in Arabic at a 1348px document width; its scroll width matched its client width, and the visible hero image loaded.
+- English language switch, product navigation, second gallery angle, Small strap option and wishlist toggle exercised in the live browser.
+- Add to bag opened the native dialog. Increasing quantity from one to two changed the subtotal from ₪890 to ₪1,780 and enabled free standard demo delivery.
+- Checkout accepted `VELORA10` and express delivery: ₪1,780 − ₪178 + ₪45 = ₪1,647. Demo confirmation showed two pieces, the same total and a local reference; the bag badge cleared.
+- Arabic mobile homepage visually inspected inside presentation mode. An observed frame sizing error was repaired: borders and phone padding now sit outside the intended iframe viewport.
+- After the corrected deployment, the browser measured iframe viewport widths of 1440px and 390px. Document scroll widths equaled their client widths in both frames (1425px and 375px, excluding the scrollbar).
 
-Therefore these items remain **unverified**:
+## Remaining verification limits
 
-- Rendered homepage, shop, product, cart and checkout at 360, 390, 430, 768, 1024, 1440 and 1920 pixels.
-- Actual overflow, touch/swipe behavior, native dialog focus restoration and screen-reader behavior.
-- Visual motion smoothness, image crops in their final rendered frames, all hover/focus appearances.
-- Lighthouse Performance, Accessibility, Best Practices and SEO scores.
+- The complete page-by-page matrix at 360, 390, 430, 768, 1024, 1440 and 1920 pixels has not been reviewed. The 390px check above covers the embedded homepage, not every page or a physical phone.
+- Actual touch/swipe behavior, complete keyboard focus restoration, screen-reader output and all hover/focus appearances remain unverified.
+- Motion smoothness and Lighthouse Performance, Accessibility, Best Practices and SEO scores have not been measured.
 
-Responsive breakpoints, reduced-motion handling, accessible labels and native dialogs are implemented. JSDOM tests do not establish browser rendering quality or replace this missing visual review.
+JSDOM tests verify logic, not rendering or device behavior. The live checks above establish only the stated flows and sizes; they do not imply a Lighthouse score or exhaustive visual QA.
 
 ## Review before a commercial client presentation
 
